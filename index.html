@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <body style= "background-color:black">
         <title>css selected by id</title>
@@ -63,14 +64,17 @@
     </ul>
     <input type="button" value="premi" 
            <script>
-    function int() {color:white
-    width:120
-    height:60
-    padding:15
-    ackground-color:DodgerBlue
-    font-family:"courier new"
-    }
-    </script>
- <button style="color:white; width:120; height:60; padding:15; background-color:DodgerBlue; font-family:"courier new"; > Click here for ken follet </button>
-                                                                                                                     
-              
+    <p>Click the button to display a random number between 1 and 10.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x = Math.floor((Math.random() * 10) + 1);
+    document.getElementById("demo").innerHTML = x;
+}
+</script>
+    </body>
+</html>
